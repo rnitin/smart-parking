@@ -8,8 +8,10 @@ The model is trained using the PyTorch library on the CNRPark dataset. The CNRPa
 The smartpark-train Jupyter notebook (or the Python script) can be executed in Google Colab and also on CPU devices with suitable modifications to the directories
 
 <h2>2. Image Processing</h2>
+To be updated
 
 <h2>3. Firebase</h2>
+To be updated
 
 <h2>4. References and Acknowledgements</h2>
-
+To be updated
