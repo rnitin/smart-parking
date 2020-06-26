@@ -1,6 +1,8 @@
 # Program to evaluate input video and determine vacant and occupied lots
 
-# Import libraries
+# Update to Firebase has been disabled in this code. Enable by uncommenting.
+
+# ***** Import libraries *****
 import torch
 import torch.nn as nn
 import pandas as pd
@@ -13,7 +15,8 @@ from threading import Thread
 import pyrebase
 import json
 
-# Function definitions
+
+# ***** Function definitions *****
 
 def predict(image, model):
     '''
@@ -167,7 +170,8 @@ def update_output(lot_status):
     # result = db.child("TestData").push(output) # push data to firebase
     # print(result)
 
-# Declarations
+
+# ***** Declarations ******
 
 # Initialise pyrebase wrapper for accessing Firebase REST API
 config = {
@@ -206,7 +210,8 @@ video_flag = 1          # flag to check video stream presence
 input_flag = 0          # flag to check video frame availability
 disp, img = 0, 0        # global declaration for disp and img cv2 frames
 
-# Program routine
+
+# ***** Program routine *****
 
 # Load model and initialise parameters
 model = torch.load(model_path, map_location=torch.device('cpu')) # load model (tained in GPU) and map to CPU
