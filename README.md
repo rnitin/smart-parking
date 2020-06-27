@@ -36,7 +36,7 @@ The programs were evaluated on Python 3.8 with the following versions of the dep
 `git clone https://github.com/rnitin/smart-parking.git`
 2. Prepare the dataset
 	Download the CNRPark+EXT dataset and separate it into training, validation and test sets in:  
-	*./train/dataset/carpark/training_set/*, *./train/dataset/carpark/valid_set/*, and *./train/dataset/carpark/set_set/*
+	*./train/dataset/carpark/training_set/*, *./train/dataset/carpark/valid_set/*, and *./train/dataset/carpark/test_set/*
 	
 	
 <h4>Training the CNN model</h4> 
