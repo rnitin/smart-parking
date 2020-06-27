@@ -56,9 +56,10 @@ The programs were evaluated on Python 3.8 with the following versions of the dep
 	3.1 Create a Firebase Realtime database
 	3.2 Update the values of `apiKey`, `authDomain`, `databaseURL` and `storageBucket` in the `config` dictionary of the script.
 	3.3 Uncomment relevant lines from the `update_output` function.
-	
+
 <h2>4. References and Acknowledgements</h2>
-[CS231n: Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/convolutional-networks/)
-[CNRPark+EXT Database](http://cnrpark.it/)
-[PyTorch](https://pytorch.org/)
+
+[CS231n: Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/convolutional-networks/)  
+[CNRPark+EXT Database](http://cnrpark.it/)  
+[PyTorch](https://pytorch.org/)  
 [LearnOpenCV](https://github.com/spmallick/learnopencv)
