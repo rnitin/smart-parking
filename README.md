@@ -1,3 +1,4 @@
+
 # smart-parking
 A deep learning system to identify vacant and occupied lots in outdoor car parkings.
 
@@ -27,5 +28,39 @@ The programs were evaluated on Python 3.8 with the following versions of the dep
 |torchsummary|1.5.1  |
 |Pyrebase |3.0.27|
 
+<h2>3. Executing the Programs</h2>
+
+<h4>Preparing the programs and the dataset</h4>
+
+1. Clone this repository  
+`git clone https://github.com/rnitin/smart-parking.git`
+2. Prepare the dataset
+	Download the CNRPark+EXT dataset and separate it into training, validation and test sets in:
+	`./train/dataset/carpark/training_set/`
+	`./train/dataset/carpark/valid_set/`
+	`./train/dataset/carpark/set_set/`
+	
+	
+<h4>Training the CNN model</h4> 
+
+1. Change the value of model_no each time to determine the result file names.
+2. Execute the python script `smartpark-train.py`
+`python smartpark-train.py`
+
+<h4>Using the vacancy detection system</h4>  
+
+1. Execute the python script `smartpark-test.py`
+`python smartpark-test.py`
+2. To evalute a different parking lot video:
+	2.1 Replace `./test-data/lot.mp4` with the new video
+	2.2 Identify the top-left and bottom-right coordinates of the individual parking lots present in the video and update the `./test-data/lot-coords.csv` file.
+3. (Optional) To upload the evaluated status to Firebase:
+	3.1 Create a Firebase Realtime database
+	3.2 Update the values of `apiKey`, `authDomain`, `databaseURL` and `storageBucket` in the `config` dictionary of the script.
+	3.3 Uncomment relevant lines from the `update_output` function.
+	
 <h2>4. References and Acknowledgements</h2>
-To be updated
+[CS231n: Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/convolutional-networks/)
+[CNRPark+EXT Database](http://cnrpark.it/)
+[PyTorch](https://pytorch.org/)
+[LearnOpenCV](https://github.com/spmallick/learnopencv)
